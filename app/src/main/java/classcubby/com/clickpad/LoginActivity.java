@@ -305,7 +305,7 @@ public class LoginActivity extends AppCompatActivity {
                                         startActivity(i);
                                         finish();
                                     }else if(nusertypeid.equals("3")||nusertypeid.equals("4")){
-
+                                        finish();
                                     }
 
                                     /*if(nusertypeid.equals("2")) {
