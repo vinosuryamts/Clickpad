@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/loginwholecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/welcometext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/welcomemessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Welcome!"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/textcolor"
+                android:textSize="40sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/welcomehopetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcometext"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/welcomehopemessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We hope you enjoy the stay!"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="120dp"
+                android:paddingRight="120dp"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/welcomecloseline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcomehopetext"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@color/textcolor" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/signintext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/welcomecloseline"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/signinmessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sign in"
+                android:gravity="center"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/usernameedittextcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/signintext"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameedittextcont"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/usernameedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Mobile number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/passwordedittextcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/usernameedittextcontainer"
+            android:gravity="center">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/passwordedittextcont"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcolor"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/passwordedittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingLeft="10dp"
+                    android:hint="Password"
+                    android:maxLength="25"
+                    android:inputType="textPassword"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/textcolor"
+                    android:textSize="16sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/showorhidetext"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/textcolor"
+                android:text="Show"
+                android:visibility="invisible"
+                android:layout_alignTop="@+id/passwordedittextcont"
+                android:layout_alignParentRight="true"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/loginbuttoncontainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/passwordedittextcontainer"
+            android:gravity="center">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:backgroundTint="@color/white"
+                app:srcCompat="@drawable/rightarrow"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/loadingcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/loginbuttoncontainer"
+            android:gravity="center"
+            android:visibility="invisible">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AVLoadingIndicatorView"
+                android:visibility="visible"
+                app:indicatorName="BallPulseIndicator"
+                app:indicatorColor="@color/textcolor" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

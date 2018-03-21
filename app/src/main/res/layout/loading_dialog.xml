@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/alertborder">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/titlecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/darktextcolor"
+                android:textSize="14dp"/>
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/messagecontainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/titlecontainer">
+
+            <RelativeLayout
+                android:id="@+id/patientimagecont"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center">
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/avi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/AVLoadingIndicatorView"
+                    android:visibility="visible"
+                    app:indicatorName="BallPulseIndicator"
+                    app:indicatorColor="@color/colorPrimaryDark" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/patientname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_below="@+id/patientimagecont"
+                android:textColor="@color/darktextcolor"/>
+
+            <TextView
+                android:id="@+id/patientmrnumber"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/patientname"
+                android:gravity="center"
+                android:textSize="14sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

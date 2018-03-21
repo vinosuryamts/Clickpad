@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addpatientinfocontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/searchoverallcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/searchdetailpagetitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/searchdetailtitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add Patient Information"
+                android:textSize="16dp"
+                android:textColor="@color/darktextcolor"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/leftarrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/blackleftarrow"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/primaryinfocontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchdetailpagetitle">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/patientinformationrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/textcolor"
+                android:clipToPadding="false"
+                android:focusableInTouchMode="true"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

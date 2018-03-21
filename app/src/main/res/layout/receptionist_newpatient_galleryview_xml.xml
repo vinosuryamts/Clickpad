@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newpatientgallerycontainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/innercontainer"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/galleryrow"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/patientimagecont"
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/patientimage"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+            </RelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <TextView
+            android:id="@+id/patientmrnumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:layout_below="@+id/galleryrow"/>
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

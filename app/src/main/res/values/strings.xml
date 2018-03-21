@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">mediBerry</string>
+    <item name="visible" type="id"/>
+    <item name="masked" type="id"/>
+    <string name="notification">&#xf0f3;</string>
+</resources>

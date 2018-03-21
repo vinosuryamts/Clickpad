@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="1dp"
+        android:layout_below="@+id/cardview"
+        android:background="@color/white">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            app:cardCornerRadius="1dp">
+
+            <TextView
+                android:id="@+id/contactinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Contact Information"
+                android:textColor="@color/darktextcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/addressline1container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/contactinformation"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/addressline1imagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/addressline1image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/addressline1details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/addressline1imagecontainer">
+
+                    <TextView
+                        android:id="@+id/addressline1text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Address Line1"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/addressline1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/addressline1text"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:maxLength="60"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/addressline2container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/addressline1container"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/addressline2imagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/addressline2image"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/addressline2detailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/addressline2imagecontainer">
+
+                    <TextView
+                        android:id="@+id/addressline2text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Address Line2"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/addressline2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/addressline2text"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:maxLength="60"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/citycontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/addressline2container"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/cityimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/cityimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/citydetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/cityimagecontainer">
+
+                    <TextView
+                        android:id="@+id/citytext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="City"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <Spinner
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/citytext"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="10dp"
+                        app:backgroundTint="@color/darktextcolor"
+                        app:layout_heightPercent="50%"></Spinner>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/contactnumbercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/citycontainer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/contactnumberimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/contactnumberimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/contactnumberdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/contactnumberimagecontainer">
+
+                    <TextView
+                        android:id="@+id/contactnumbertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Contact Number"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="40%"></TextView>
+
+                    <EditText
+                        android:id="@+id/contactnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/contactnumbertext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:maxLength="20"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/altcontactnumbercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/contactnumbercontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/altcontactnumberimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/altcontactnumberimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/altcontactnumberdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/altcontactnumberimagecontainer">
+
+                    <TextView
+                        android:id="@+id/altcontactnumbertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Alternative Contact Number"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/altcontactnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/altcontactnumbertext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:maxLength="20"
+                        android:inputType="number"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+            android:id="@+id/emailcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/altcontactnumbercontainer"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:id="@+id/emailimagecontainer"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/emailimage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/usericon"></ImageView>
+
+            </RelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/emaildetailscontainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/emailimagecontainer">
+
+                <TextView
+                    android:id="@+id/emailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:padding="5dp"
+                    android:text="Email Id"
+                    android:textColor="@color/darktextcolor"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_heightPercent="50%"></TextView>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/emailtext"
+                    android:gravity="bottom"
+                    android:textColor="@color/darktextcolor"
+                    android:textCursorDrawable="@drawable/black_cursor"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="150"
+                    app:backgroundTint="@color/darktextcolor"></EditText>
+
+            </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/nameofrelativecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/emailcontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/nameofrelativeimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/nameofrelativeimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/nameofrelativedetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/nameofrelativeimagecontainer">
+
+                    <TextView
+                        android:id="@+id/nameofrelativetext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Name of Relative"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/nameofrelative"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/nameofrelativetext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:maxLength="100"
+                        app:backgroundTint="@color/darktextcolor">
+                    </EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/relationshipofpatientcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/nameofrelativecontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relationshipofpatientimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/relationshipofpatientimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/relationshipofpatientdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/relationshipofpatientimagecontainer">
+
+                    <TextView
+                        android:id="@+id/relationshipofpatienttext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Relationship of Patient"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/relationshipofpatient"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relationshipofpatienttext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        app:backgroundTint="@color/darktextcolor">
+                    </EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/relativemobilenumbercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/relationshipofpatientcontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/relativemobilenumberimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/relativemobilenumberimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/relativemobilenumberdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/relativemobilenumberimagecontainer">
+
+                    <TextView
+                        android:id="@+id/relativemobilenumbertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Relative Mobile Number"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/relativemobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/relativemobilenumbertext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14dp"
+                        android:singleLine="true"
+                        android:maxLength="15"
+                        android:inputType="number"
+                        app:backgroundTint="@color/darktextcolor">
+                    </EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/savecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/relativemobilenumbercontainer"
+                android:layout_margin="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/Next"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="Next"
+                    android:background="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </android.support.percent.PercentRelativeLayout>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.v7.widget.CardView>

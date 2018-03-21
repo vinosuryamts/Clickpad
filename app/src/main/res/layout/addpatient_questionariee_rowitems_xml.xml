@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowlistcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/innercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/patientdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+
+            <TextView
+                android:id="@+id/questionid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:textColor="@color/darktextcolor"/>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/darktextcolor"/>
+
+            <EditText
+                android:id="@+id/questionanswer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/question"
+                android:textColor="@color/darktextcolor"
+                android:textCursorDrawable="@drawable/black_cursor"
+                android:textSize="14sp"
+                app:backgroundTint="@color/darktextcolor"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

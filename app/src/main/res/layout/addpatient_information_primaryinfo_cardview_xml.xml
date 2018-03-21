@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="1dp"
+        android:layout_below="@+id/cardview"
+        android:background="@color/white">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            app:cardCornerRadius="1dp">
+
+            <TextView
+                android:id="@+id/Personalinformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:text="Primary Information"
+                android:textColor="@color/darktextcolor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/firstnamecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/Personalinformation"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/firstnameimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/firstnameimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/firstnamedetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/firstnameimagecontainer">
+
+                    <TextView
+                        android:id="@+id/firstnametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="First Name"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/firstname"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/firstnametext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14sp"
+                        android:maxLength="50"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/lastnamecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/firstnamecontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/lastnameimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/lastnameimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/lastnamedetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/lastnameimagecontainer">
+
+                    <TextView
+                        android:id="@+id/lastnametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Last Name"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/lastname"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14sp"
+                        android:singleLine="true"
+                        android:maxLength="50"
+                        app:backgroundTint="@color/darktextcolor"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/fathernamecontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/lastnamecontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fathernameimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/fathernameimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/fathernamedetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/fathernameimagecontainer">
+
+                    <TextView
+                        android:id="@+id/fathernametext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Father or Husband Name"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/fathername"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/fathernametext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        android:textSize="14sp"
+                        android:maxLength="100"
+                        android:singleLine="true"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/gendercontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/fathernamecontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/genderimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/genderimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/genderdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/genderimagecontainer">
+
+                    <TextView
+                        android:id="@+id/gendertext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Gender"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <Spinner
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/gendertext"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/darktextcolor"
+                        app:layout_heightPercent="50%"></Spinner>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/dateofbirthcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/gendercontainer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/dateofbirthimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/dateofbirthimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/dateofbirthdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/dateofbirthimagecontainer">
+
+                    <TextView
+                        android:id="@+id/dateofbirthtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Date of Birth"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="40%"></TextView>
+
+                    <TextView
+                        android:id="@+id/dateofbirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/dateofbirthtext"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"></TextView>
+
+                    <ImageView
+                        android:id="@+id/calendarimage"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/dateofbirth"
+                        android:contentDescription="et"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/calendarnew" />
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/civilstatuscontainer"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/dateofbirthcontainer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/civilstatusimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/civilstatusimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/civilstatusdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/civilstatusimagecontainer">
+
+                    <TextView
+                        android:id="@+id/civilstatustext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Civil Status"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="40%"></TextView>
+
+                    <Spinner
+                        android:id="@+id/civilstatus"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/civilstatustext"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        app:backgroundTint="@color/darktextcolor"></Spinner>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+            <android.support.percent.PercentRelativeLayout
+                android:id="@+id/bloodgroupcontainer"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_below="@+id/civilstatuscontainer"
+                android:layout_margin="10dp"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/bloodgroupimagecontainer"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/bloodgroupimage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/usericon"></ImageView>
+
+                </RelativeLayout>
+
+                <android.support.percent.PercentRelativeLayout
+                    android:id="@+id/bloodgroupdetailscontainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/bloodgroupimagecontainer">
+
+                    <TextView
+                        android:id="@+id/bloodgrouptext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:padding="5dp"
+                        android:text="Blood Group"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_heightPercent="50%"></TextView>
+
+                    <EditText
+                        android:id="@+id/bloodgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/bloodgrouptext"
+                        android:gravity="bottom"
+                        android:textColor="@color/darktextcolor"
+                        android:textSize="14sp"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/black_cursor"
+                        app:backgroundTint="@color/darktextcolor"></EditText>
+
+                </android.support.percent.PercentRelativeLayout>
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.v7.widget.CardView>
