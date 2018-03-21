@@ -304,6 +304,8 @@ public class LoginActivity extends AppCompatActivity {
                                         Intent i = new Intent(LoginActivity.this, Receptionist_Dashboard_Activity.class);
                                         startActivity(i);
                                         finish();
+                                    }else if(nusertypeid.equals("3")||nusertypeid.equals("4")){
+
                                     }
 
                                     /*if(nusertypeid.equals("2")) {
