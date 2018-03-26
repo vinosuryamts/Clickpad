@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rowlistcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/innercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/patientimagecont"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/doctorimage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/patientdetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/patientimagecont"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/doctorname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/darktextcolor"/>
+
+            <TextView
+                android:id="@+id/doctordepartment"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/doctorname"
+                android:gravity="center_vertical"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/doctortimings"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/doctordepartment"
+                android:gravity="center_vertical"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/doctorid"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/doctorname"
+                android:gravity="center_vertical"
+                android:visibility="invisible"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/doctorimagevalue"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/patientmrnumber"
+                android:gravity="center_vertical"
+                android:visibility="invisible"
+                android:textSize="14sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

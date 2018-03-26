@@ -158,6 +158,11 @@ public class appointmentsearch_patient_listview_adapter extends BaseAdapter {
                 mobnumvalue = patientmobile.getText().toString().trim();
                 imagevalue = patimage.getText().toString().trim();
 
+                final Bundle bundle = new Bundle();
+                Intent i = new Intent(context,Appointments_newdoctor_search_Activity.class);
+                bundle.putString("Patientid", idvlaue);
+                i.putExtras(bundle);
+                context.startActivity(i);
 
             }
         });

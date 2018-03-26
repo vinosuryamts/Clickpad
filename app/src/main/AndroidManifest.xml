@@ -29,6 +29,7 @@
         <activity android:name=".Receptionist.Dashboard.Addpatientinformation.Add_PatientInformation_Activity" android:screenOrientation="portrait"></activity>
         <activity android:name=".Receptionist.Dashboard.Addpatientinformation.Questionarieeadapter.Addpatient_Questionariee_Activity" android:screenOrientation="portrait"></activity>
         <activity android:name=".Receptionist.Dashboard.Appointments.Appointments_newpatient_search_Activity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Receptionist.Dashboard.Appointments.Appointments_newdoctor_search_Activity" android:screenOrientation="portrait"></activity>
 
     </application>
 

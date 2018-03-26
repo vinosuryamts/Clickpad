@@ -16,6 +16,8 @@ public class loginconfig {
     public static final String key_editpatientinfo_url="http://classcubby.com/clinic/Webservice/receptionist/editpatientinformation.php";
     public static final String key_addquestionariee_list_url="http://classcubby.com/clinic/Webservice/receptionist/questionlist.php";
     public static final String key_addquestionariee_upload_url="http://classcubby.com/clinic/Webservice/receptionist/addpatientandquestionarieeupload.php";
+    public static final String key_search_dashboard_doctor_information_url="http://classcubby.com/clinic/Webservice/receptionist/dashdoctorsearchinfo.php";
+    public static final String key_departmentlist_url="http://classcubby.com/clinic/Webservice/receptionist/getdepartmentlist.php";
 
     public static final String shared_pref_name="loginapp";
 
@@ -62,6 +64,14 @@ public class loginconfig {
     public static final String key_info_patientnameofrelative = "editnameofrelative";
     public static final String key_info_patientrelationshipofpatient = "editpatientrelationshipofpatient";
     public static final String key_info_patientrelativemobilenumber = "editpatientrelativemobilenumber";
+
+
+    public static final String key_info_doctorid = "doctorid";
+    public static final String key_info_doctorname = "doctorname";
+    public static final String key_info_doctordepartment = "doctordepartment";
+    public static final String key_info_doctordepartmentid = "doctordepartmentid";
+    public static final String key_info_doctorimage = "doctorimage";
+    public static final String key_info_appointmentpatientid = "appointmentpatientid";
 
     public static final String key_info_questionarieuload = "questionarieuload";
 
