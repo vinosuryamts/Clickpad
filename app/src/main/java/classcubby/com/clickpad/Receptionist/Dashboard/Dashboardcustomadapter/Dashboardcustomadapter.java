@@ -21,6 +21,7 @@ import java.util.Arrays;
 
 import classcubby.com.clickpad.R;
 import classcubby.com.clickpad.Receptionist.Dashboard.Addpatientinformation.Add_PatientInformation_Activity;
+import classcubby.com.clickpad.Receptionist.Dashboard.Appointments.Appointments_newpatient_search_Activity;
 import classcubby.com.clickpad.Receptionist.Dashboard.Dashboard_newpatient_gallery_adapter;
 import classcubby.com.clickpad.Receptionist.Dashboard.Patientsearchinformation.Dashboard_newpatient_search_Activity;
 import classcubby.com.clickpad.TextConversionjava.NumberToWordsConverter;
@@ -61,7 +62,7 @@ public class Dashboardcustomadapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     @Override
     public int getItemViewType(int position) {
-        return position == 0 ? 0: (position ==1 ? 1:2);
+        return position;
         //return mDataSetTypes[position];
     }
 
@@ -82,9 +83,14 @@ public class Dashboardcustomadapter extends RecyclerView.Adapter<RecyclerView.Vi
                 viewHolder = new EditPatientviewholder(v1);
                 break;
 
+            case 2:
+                View v2 = inflater.inflate(R.layout.receptionist_dashboard_appointment_xml, null);
+                viewHolder = new Addappointmentviewholder(v2);
+                break;
+
             default:
-                View v2 = inflater.inflate(R.layout.receptionist_dashboard_addpatient_xml, null);
-                viewHolder = new AddPatientviewholder(v2);
+                View v3 = inflater.inflate(R.layout.receptionist_dashboard_addpatient_xml, null);
+                viewHolder = new AddPatientviewholder(v3);
                 break;
         }
         return viewHolder;
@@ -105,9 +111,14 @@ public class Dashboardcustomadapter extends RecyclerView.Adapter<RecyclerView.Vi
                 configureeditnewpatient(vh2, position);
                 break;
 
+            case 2:
+                Addappointmentviewholder vh3 = (Addappointmentviewholder) holder;
+                configureAddappointmentviewholder(vh3, position);
+                break;
+
             default:
-                AddPatientviewholder vh3 = (AddPatientviewholder) holder;
-                configureaddnewpatient(vh3, position);
+                AddPatientviewholder vh4 = (AddPatientviewholder) holder;
+                configureaddnewpatient(vh4, position);
                 break;
         }
 
@@ -186,6 +197,47 @@ public class Dashboardcustomadapter extends RecyclerView.Adapter<RecyclerView.Vi
         });
 
     }
+
+
+
+
+    public class Addappointmentviewholder extends RecyclerView.ViewHolder {
+
+        RelativeLayout appointmentcontainer;
+        TextView appointmentttitle,appointmentbutton,morebutton;
+
+        public Addappointmentviewholder(View v) {
+            super(v);
+            this.appointmentttitle = (TextView) v.findViewById(R.id.appointmentttitle);
+            this.appointmentbutton = (TextView) v.findViewById(R.id.appointmentbutton);
+            this.morebutton = (TextView) v.findViewById(R.id.morebutton);
+            this.appointmentcontainer = (RelativeLayout) v.findViewById(R.id.appointmentcontainer);
+        }
+    }
+
+
+    private void configureAddappointmentviewholder(final Addappointmentviewholder vh, int position) {
+
+        Typeface normaltypeface = Typeface.createFromAsset(context.getAssets(), "fonts/ClearSansRegular.ttf");
+        Typeface boldtypeface = Typeface.createFromAsset(context.getAssets(), "fonts/ClearSansMedium.ttf");
+        Typeface fontawesome = Typeface.createFromAsset(context.getAssets(), "fonts/fontawesome.ttf");
+
+        vh.appointmentttitle.setTypeface(boldtypeface);
+        vh.appointmentbutton.setTypeface(boldtypeface);
+        vh.morebutton.setTypeface(boldtypeface);
+
+
+        vh.appointmentcontainer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(context,Appointments_newpatient_search_Activity.class);
+                context.startActivity(i);
+            }
+        });
+
+    }
+
+
 
 
 

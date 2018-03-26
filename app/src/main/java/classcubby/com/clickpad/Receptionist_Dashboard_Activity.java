@@ -273,7 +273,7 @@ public class Receptionist_Dashboard_Activity extends AppCompatActivity {
                                 patientimage = patientimage.replace("\"", "");
 
 
-                                String[] values = {"0","1"};
+                                String[] values = {"0","1","2"};
 
                                 newvalues = new String[values.length];
 
@@ -302,6 +302,21 @@ public class Receptionist_Dashboard_Activity extends AppCompatActivity {
                                 dataSet = new String[newvalues.length];
                                 dataSetTypes = new int[newvalues.length];
 
+
+                                int m=2;
+                                jo = new org.json.simple.JSONObject();
+                                ja = new JSONArray();
+                                mainObj = new org.json.simple.JSONObject();
+                                jo.put("patientid", patientid);
+                                jo.put("mrnumber", mrnumber);
+                                jo.put("patientimage", patientimage);
+                                ja.put(jo);
+                                mainObj.put("valueslist", ja);
+                                newvalues[m]=mainObj.toString();
+
+                                dataSet = new String[newvalues.length];
+                                dataSetTypes = new int[newvalues.length];
+
                                 for(int t=0;t<newvalues.length;t++){
                                     if(t==0){
                                         dataSet[t]=newvalues[t];
@@ -309,6 +324,9 @@ public class Receptionist_Dashboard_Activity extends AppCompatActivity {
                                     }else if(t==1){
                                         dataSet[t]=newvalues[t];
                                         dataSetTypes[t]=1;
+                                    }else if(t==2){
+                                        dataSet[t]=newvalues[t];
+                                        dataSetTypes[t]=2;
                                     }
                                 }
 
